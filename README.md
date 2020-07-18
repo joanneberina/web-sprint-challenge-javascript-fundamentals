@@ -27,13 +27,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+> The forEach() method doesn’t actually return anything (undefined). It simply calls a provided function on each element in your array. This callback is allowed to mutate the calling array. The map() method will also call a provided function on every element in the array. The difference is that map() utilizes return values and actually returns a new Array of the same size.
+
 2. Explain the difference between a callback and a higher order function.
+
+> Callback is the argument passed to the higher order function. A higher order function invokes a callback.
 
 3. What is closure?
 
+> Closure is where a global variable is accessible from inside a function but an inner variable is not accessible from outside. A closure has a function as a return value.
+
 4. Describe the four rules of the 'this' keyword.
 
+> 1. When doing Window/Global Object Binding, "this" is the actual webpage (window object).
+  2. Implicit Binding is binding the object to the "this" keyword.
+  3. New Binding use the keyword "new" to create a new instance of class.
+  4. Explicit Binding is when you use .call or .apply methods so the subclass can inherit
+
 5. Why do we need super() in an extended class?
+
+> It's a way to pass the parameter to the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -89,5 +102,10 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
+
+
+
+
+
 
 
